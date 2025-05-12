@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+        #dynamicElement {
+            padding: 15px;
+            margin-top: 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript DOM Manipulation</h1>
+        <p>This page demonstrates various DOM manipulation techniques using JavaScript</p>
+    </header>
+
+    <section id="textManipulation">
+        <h2>Text Content Manipulation</h2>
+        <p id="changingText">This text will change when you click the button below.</p>
+        <button id="changeTextBtn">Change Text</button>
+    </section>
+
+    <section id="styleManipulation">
+        <h2>Style Manipulation</h2>
+        <p id="styleText">This paragraph's style will change when you click the button.</p>
+        <button id="changeStyleBtn">Change Style</button>
+    </section>
+
+    <section id="elementManipulation">
+        <h2>Element Manipulation</h2>
+        <p>Click the button below to toggle a new element.</p>
+        <button id="toggleElementBtn">Toggle Element</button>
+        <div id="dynamicElement">
+            <p>This is a dynamically controlled element!</p>
+        </div>
+    </section>
+
+    <section id="interactiveDemo">
+        <h2>Interactive Counter</h2>
+        <p>Current count: <span id="counter">0</span></p>
+        <button id="incrementBtn">Increment</button>
+        <button id="decrementBtn">Decrement</button>
+        <button id="resetBtn">Reset</button>
+    </section>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
